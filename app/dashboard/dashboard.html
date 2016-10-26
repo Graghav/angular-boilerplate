@@ -1,0 +1,39 @@
+<header>
+  <navbar></navbar>
+  <sidenav></sidenav>
+</div>
+<main class="has-sidemenu">
+  <div class="content">
+    <div class="row">
+      <h4>Dashboard</h4>
+    </div>
+    <div class="row">
+      <!-- Distribution Graph -->
+      <div class="col s5">
+        <div class="card">
+          <div class="card-content">
+            <center>
+              <h3 class="card-title">Distribution</h3>
+            </center>
+            <canvas class="chart chart-doughnut" chart-legend="true" chart-data="vm.distributionData" chart-labels="vm.labels">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <!-- End of Distribution Graph -->
+      <!-- Bar Graph -->
+      <div class="col s5 push-s1">
+        <div class="card">
+          <div class="card-content">
+            <center>
+              <h3 class="card-title">Bar Distribution</h3>
+            </center>
+            <canvas id="distribution-chart" class="chart chart-line" chart-legend="true" chart-series="vm.barSeries" chart-data="vm.barData" chart-labels="vm.barLabels">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <!-- End of Bar Graph -->
+    </div>
+  </div>
+</main>
